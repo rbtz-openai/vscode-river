@@ -2,6 +2,13 @@
 
 ## Main (unreleased)
 
+## v0.2.0-alpha.3
+
+### Features
+
+* Surface syntax errors from `alloy fmt` as inline diagnostics while editing.
+* Suppress disruptive popups for syntax errors; still report startup failures.
+
 ## v0.2.0-alpha.1
 
 ### Features
