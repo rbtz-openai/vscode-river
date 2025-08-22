@@ -2,7 +2,7 @@
     "name": "river",
     "displayName": "River",
     "description": "River configuration language support",
-    "version": "0.2.0-alpha.1",
+    "version": "0.2.0-alpha.2",
     "author": "Robert Fratto",
     "publisher": "rfratto",
     "repository": {
@@ -14,6 +14,10 @@
     },
     "categories": [
         "Programming Languages"
+    ],
+    "main": "./extension.js",
+    "activationEvents": [
+      "onLanguage:river"
     ],
     "contributes": {
         "languages": [
@@ -36,6 +40,17 @@
                 "scopeName": "source.river",
                 "path": "./syntaxes/river.tmLanguage.json"
             }
-        ]
+        ],
+        "configuration": {
+          "title": "River",
+          "properties": {
+            "river.alloyPath": {
+              "type": "string",
+              "default": "alloy",
+              "description": "Path to the alloy executable used for formatting.",
+              "scope": "application"
+            }
+          }
+        }
     }
 }
